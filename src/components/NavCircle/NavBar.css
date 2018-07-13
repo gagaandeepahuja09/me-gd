@@ -1,0 +1,41 @@
+.navBar {
+	position: absolute;
+	top: 0.5%;
+	left: 50%;
+	background-color: #1a1a1a;
+	position: fixed;
+	z-index: 2000;
+}
+
+.navBar ul {
+	display: inline-block;
+	list-style-type: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navBar li {
+	cursor: pointer;
+	color: green;
+	font-size: 1.5rem;
+	display: inline-block;
+	padding: .7rem 3rem;
+	animation: showText 1s ease;
+}
+
+.navBar li:hover {
+	color: transparent;
+	font-weight: 700;
+	background-color: #262626;
+	animation: showText 10s ease;
+}
+
+@keyframes showText {
+	0% {
+		color: transparent;
+	}
+	100% {
+		color: white;
+	}
+}

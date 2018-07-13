@@ -1,0 +1,12 @@
+body {
+  margin: 1rem;
+  background: linear-gradient(105deg, #262626 0%, #262626 50%, #1a1a1a 50%, #1a1a1a 70%,#262626 70%, #262626 100%);
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'Lato', serif;
+  font-weight: 400;
+}
+
+.heading__primary {
+	position: relative;
+}

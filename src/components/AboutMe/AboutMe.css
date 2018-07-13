@@ -1,0 +1,269 @@
+.heading__primary--4 {
+	position: relative;
+	display: inline;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	font-weight: 700;
+	letter-spacing: .6rem;
+	margin: 5rem auto;
+	padding-bottom: 3rem;
+}
+
+.heading__primary--4::after {
+	content: "";
+	position: absolute;
+	top: 4rem;
+	left: -3rem;
+	background-color: white;
+	width: 448%;
+	height: .7rem;
+}
+
+.basic__desc {
+	text-transform: uppercase;
+	list-style-type: none;
+	padding: 1rem;
+	margin-top: 1rem;
+}
+
+.basic__desc li {
+	padding: .4rem;
+}
+
+.mission {
+	text-transform: none;
+	position: relative;
+}
+
+.mission::after {
+	content: "";
+	position: absolute;
+	bottom: -3.5rem;
+	left: -30rem;
+	background-color: white;
+	width: 238%;
+	height: .7rem;
+}
+
+.skills {
+	padding-top: 10rem;
+	margin-top: 10rem;
+	text-decoration: none;
+}
+
+.skills ul {
+	list-style-type: none;
+}
+
+.skills input {
+	display: none;
+}
+
+.skills li {
+	cursor: pointer;
+	display: inline-block;
+	height: 2rem;
+	margin: auto auto;
+	padding-top: .5rem;
+	padding-left: .5rem;
+	padding-right: .5rem;
+	margin-right: 5rem;
+	margin-bottom: .9rem;
+	background-color: #1a1a1a;
+	border: 1px solid grey;
+}
+
+.btn-plus {
+	cursor: pointer;
+	display: inline-block;
+	padding-top: .5rem;
+	background-color: #1a1a1a;
+	color: green;
+	border: 1px solid grey;
+	box-shadow: 0 2rem 4rem rgba(0,0,0,.4);
+	height: 2rem;
+	margin: 0 auto;
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+
+.plus__checked:checked ~ .btn-plus {
+	height: 1.3rem;
+	width: 1.3rem;
+	margin: 0 auto;
+	padding-top: .04rem;
+	padding-right: .04rem;
+	border-radius: 50%;
+	color: white;
+}
+
+.plus__checked:checked ~ li {
+	border: 0px solid grey;
+	background-color: inherit;
+}
+
+.basic__desc span {
+	padding-left: 1.5rem;
+	color: grey;
+}
+
+.my__img {
+	width: 33%;
+	height: 92vh;
+	display: inline-block;
+	background-image: url(../../img/me.jpg);
+	border: .8rem solid white;
+	position: relative;
+	transition: all 10s;
+}
+
+.my__img--hover {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: 900;
+	text-transform: uppercase;
+	position: absolute;
+	color: purple;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	line-height: 100%;
+	background-color: rgba(0,0,0,.6);
+	opacity: 0;
+	outline: .6rem solid purple;
+	outline-offset: -2rem
+}
+
+.my__img--hover div {
+	position: absolute;
+	text-decoration: underline;
+	top: 60%;
+	left: 30%;
+}
+
+.my__img:hover .my__img--hover {
+	opacity: 1;
+}
+
+.dashed {
+	text-decoration: underline solid green;
+	color: green !important;
+}
+
+.row {
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 6rem;
+}
+
+.rem-row {
+	width: 64%;
+	display: inline-block;
+	float: left;
+}
+
+.text-width {
+	width: 45%;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+}
+
+.photo-width {
+	width: 32%;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+}
+
+
+.showEff {
+	animation: opacEff 1s ease;
+}
+
+@keyframes opacEff {
+	0% {
+		opacity: 0;
+		transform: translateX(50rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+.box {
+	background-color: #d9d9d9;
+	border-radius: 1rem;
+	padding: 1rem 0;
+	box-shadow: 0.2rem 2rem 4rem rgba(0,0,0,.15);
+}
+
+.box:last-child {
+	padding: 1rem 2rem;
+}
+
+.me__text {
+	font-size: 1.1rem;
+	display: inline-block;
+}
+
+.me__text:not(:last-child) {
+	padding-bottom: 1.8rem;
+}
+
+// LOOK
+
+.lArrow2__checkbox {
+	display: none;
+}
+
+.lArrow2__button {
+	position: absolute;
+	top: 40%;
+	left: 95.5%;
+	color: #eee;
+	font-weight: 700;
+	display: block;
+	text-transform: uppercase;
+	font-size: .65rem;
+	animation: lArrow2Anim 4s cubic-bezier(0,1.92,0,.74) infinite;
+	z-index: 1000;
+}
+
+.lArrow2__button--look {
+	color: #eee;
+	font-size: 2.5rem;
+	display: block;
+	cursor: pointer;
+}
+
+.lArrow2__button--look:hover {
+	cursor: pointer;
+	font-weight: 900;
+}
+
+.lArrow2__checkbox:checked ~ .about { 
+	transform: rotateY(-80deg);
+	opacity: 0;                   
+}
+
+@keyframes lArrow2Anim {
+	0% {
+		transform: translateX(-5rem);
+		opacity: 0;
+	}
+
+	15% {
+		transform: translate(0);
+		opacity: .7;
+	}
+
+	100% {
+		transform: translate(0);
+		opacity: .7;
+	}
+}

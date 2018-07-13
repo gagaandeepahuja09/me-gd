@@ -1,0 +1,133 @@
+.nav__check {
+	display: none;
+	transition: all 5s
+}
+
+
+.navigation {
+	position: fixed;
+	z-index: 4000;
+}
+
+.nav__check:checked ~ label .navCircle .lines {
+	background-color: transparent;
+}
+
+.navBar {
+	transform: scale(0);
+	transition: all .6s ease;
+}
+
+.navBar:hover {
+	font-size: .2rem;
+}
+
+.nav__check:checked ~ label .navBar {
+	transform: scale(1);
+}
+
+.nav__check:checked ~ label .navCircle .lines::before {
+	transform: rotate(150deg);
+}
+
+.nav__check:checked ~ label .navCircle .lines::after {
+	transform: rotate(-150deg);
+}
+
+.navCircle {
+	left: 70rem;
+	z-index: 4000;
+	width: 4rem;
+	height: 4rem;
+	background-color: #8c8c8c;
+	border-radius: 50%;
+	display: inline-block;
+	position: fixed;
+	cursor: pointer;
+}
+
+.lines, .lines::before, .lines::after {
+	width: 2rem;
+	height: 2px;
+	background-color: #1a1a1a;
+	display: inline-block;
+	position: absolute;
+	transition: all .6s ease;
+}
+
+.lines {
+	left:1rem;
+	top: 2rem;
+}
+
+.lines::before, .lines::after {
+	content: "";
+}
+
+.lines::after {
+	left: 0;
+	top: -.5rem;
+}
+
+.lines::before {
+	left: 0;
+	top: .5rem;
+}
+
+.navCircle:hover .lines::before {
+	top: .7rem;
+}
+
+.navCircle:hover .lines::after {
+	top: -.7rem;
+}
+
+.navBar {
+	position: absolute;
+	top: 2.8%;
+	left: 40%;
+	height: 3.9rem;
+	background-color: #8c8c8c;
+	position: fixed;
+	z-index: 2000;
+}
+
+.navBar ul {
+	text-align: center;
+	display: inline-block;
+	list-style-type: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navBar li {
+	padding-top: .5rem;
+	cursor: pointer;
+	color: green;
+	font-size: 1.5rem;
+	display: inline-block;
+	height: 2rem;
+	width: 7.5rem;
+	margin-top: .5rem;
+}
+
+.navBar li:first-child {
+	margin-left: 2rem;
+}
+
+.navBar li:hover {
+	color: white;
+	font-weight: 700;
+	background-color: #737373;
+}
+
+@keyframes scaleNavBar {
+	0% {
+		transform: scale(0) translateX(30rem);
+	}
+
+	100% {
+		transform: scale(1) translate(0);
+	}
+}
