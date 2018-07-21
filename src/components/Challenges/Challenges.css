@@ -20,9 +20,10 @@
 .card {
 	perspective: 150rem;
 	-moz-perspective: 150rem;
-	height: 33rem;
+	height: 28rem;
 	position: relative;
 	width: 75%;
+	margin-bottom: 5rem;
 }
 
 .card__side {
@@ -30,7 +31,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 33rem;
+	height: 28rem;
 	overflow: hidden;
 	box-shadow: 0 2rem 4rem rgba(0,0,0,.4);
 	backface-visibility: hidden;
@@ -51,12 +52,65 @@
 }
 
 .card__side--back {
-	height: 33rem;
+	position: relative;
+	height: 28rem;
 	transform: rotateY(180deg);
+	color: white;
+	text-transform: uppercase;
+}
+
+.card__side--back ul {
+	font-size: 1.6rem;
+	font-weight: 900;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	list-style-type: none;
+	text-transform: uppercase;
+}
+
+.card__side--back li {
+	margin: 6rem; 
+	border: 1.4px solid white;
+	border-radius: 10rem;
+	cursor: pointer;
+	padding: .7rem 2rem;
+	transition: all .6s;
+	background-size: 230%;
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, green 50%);
+}
+
+
+.card__side--back--2 li{
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, green 50%);
+}
+
+.card__side--back--1 li{
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, blue 50%);
+}
+
+.card__side--back li:hover {
+	background-position: 100%;
+	transform: translateY(-1rem);
+	color: blue;
+}
+
+.card__side--back li:hover .card__side--back li a {
+	color: blue;
+}
+
+.card__side--back li a {
+	text-decoration: none;
+	color: white;
 }
 
 .card__side--back--1 {
 	background-image: linear-gradient(to right, rgba(0, 255, 255, 1), rgba(0, 0, 255, 1));
+}
+
+.card__side--back--2 {
+	background-image: linear-gradient(to right, rgba(0, 255, 255, 1), rgba(0, 255, 0, 1));
 }
 
 .card__picture {
@@ -68,7 +122,14 @@
 }
 
 .card__picture--1 {
-	background-image: linear-gradient(to right, rgba(0, 255, 255, 1), rgba(0, 0, 255, 1)), url(../../img/codechef.jpg);
+	background-image: linear-gradient(to right, rgba(0, 255, 255, .5), rgba(0, 0, 255, .5)), url(../../img/codechef.jpg);
+	height: 100%;
+	width: 100%;
+}
+
+.card__picture--2 {
+	background-image: linear-gradient(to right, rgba(0, 255, 255, .5), rgba(0, 255, 0, .5)), url(../../img/codeforces.jpg);
+	height: 100%;
 }
 
 .card__details ul {
@@ -80,5 +141,51 @@
 .card__details li {
 	text-align: center;
 	padding: .6rem;
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid #eee;
+}
+
+.card__details--1 span {
+	color: blue;
+	font-weight: 700;
+}
+
+.card__details--2 span {
+	color: green;
+	font-weight: 700;
+}
+
+.links {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.links li {
+	width: 1rem;
+	height: 2rem;
+	border: 4px solid grey;
+	margin: 2rem 3rem;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 2rem;
+	list-style-type: none;
+	cursor: pointer;
+	background-size: cover;
+	height: 100%;
+}
+
+.hr {
+	background-image: url(../../img/hackerrank.jpg);
+}
+
+.ib {
+	background-image: url(../../img/interviewbit.jpg);	
+}
+
+.lc {
+	background-image: url(../../img/leetcode.jpg);	
+}
+
+.he {
+	background-image: url(../../img/hackerearth.jpg);	
 }
