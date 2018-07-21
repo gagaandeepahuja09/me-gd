@@ -51,13 +51,17 @@ const aboutMe = (props) => {
 									<input type = "checkbox" className = "plus__checked" id = "css" />
 									<label for = "css" className = "btn-plus">+</label><li>React Router</li>
 									<input type = "checkbox" className = "plus__checked" id = "css" />
+									<label for = "css" className = "btn-plus">+</label><li>Node.js</li>
+									<input type = "checkbox" className = "plus__checked" id = "css" />
+									<label for = "css" className = "btn-plus">+</label><li>MongoDB</li>
+									<input type = "checkbox" className = "plus__checked" id = "css" />
+									<label for = "css" className = "btn-plus">+</label><li>Firebase</li>
+									<input type = "checkbox" className = "plus__checked" id = "css" />
 									<label for = "css" className = "btn-plus">+</label><li>SASS</li>
 									<input type = "checkbox" className = "plus__checked" id = "css" />
-									<label for = "css" className = "btn-plus">+</label><li>C# And Unity Game Engine</li>
+									<label for = "css" className = "btn-plus">+</label><li>jQuery</li>
 									<input type = "checkbox" className = "plus__checked" id = "css" />
 									<label for = "css" className = "btn-plus">+</label><li>Bootstrap</li>
-									<input type = "checkbox" className = "plus__checked" id = "css" />
-									<label for = "css" className = "btn-plus">+</label><li>jQuery</li>
 								</ul>
 							</div>
 						</div>	
