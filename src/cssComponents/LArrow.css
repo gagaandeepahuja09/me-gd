@@ -3,28 +3,57 @@
 }
 
 .lArrow__button {
-	position: absolute;
-	top: 40%;
-	left: 95.5%;
-	color: #eee;
-	font-weight: 700;
+	position: fixed;
+	z-index: 2000;
+	top: 50%;
+	left: 93.5%;
+	color: white;
+	font-weight: 900;
 	display: block;
 	text-transform: uppercase;
-	font-size: .65rem;
+	font-size: .85rem;
 	animation: lArrowAnim 4s cubic-bezier(0,1.92,0,.74) infinite;
-	z-index: 1000;
+	z-index: 2000;
+	transition: all .5s ease-out;
 }
 
 .lArrow__button--look {
 	color: #eee;
-	font-size: 2.5rem;
+	font-size: .8.5rem;
 	display: block;
 	cursor: pointer;
+	position: relative;
 }
 
-.lArrow__button--look:hover {
-	cursor: pointer;
-	font-weight: 900;
+.lArrow__button--look::after {
+	content: "";
+	position: absolute;
+	top: -3rem;
+	left: 0rem;
+	background-color: white;	
+	height: .25rem;
+	width: 3rem;
+	transform: rotate(30deg);
+}
+
+.lArrow__button--look::before {
+	content: "";
+	position: absolute;
+	top: -1.6rem;
+	left: 0rem;
+	background-color: white;	
+	height: .25rem;
+	width: 3rem;
+	transform: rotate(-25deg);
+}
+
+.lArrow__button--text {
+	opacity: 0;
+	font-size: .8rem;
+}
+
+.lArrow__button:hover .lArrow__button--text {
+	opacity: 1;
 }
 
 .lArrow__checkbox:checked ~ div { 

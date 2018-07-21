@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Header from './components/Header/Header';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
+import Challenges from './components/Challenges/Challenges';
 import NavCircle from './components/NavCircle/NavCircle';
-import './App.css'
+import './App.css';
 
 class App extends Component {
   state = {
@@ -24,7 +25,10 @@ class App extends Component {
       selClass =  (<AboutMe next ="projects" clicked = {() => setTimeout(() => { this.changeClass("projects") }, 1600)} />);
 
     else if(this.state.selectedClass === "projects")
-      selClass =  (<Projects next ="skills" clicked = {() => setTimeout(() => { this.changeClass("header") }, 1600)} />);    
+      selClass =  (<Projects next ="skills" clicked = {() => setTimeout(() => { this.changeClass("challenges") }, 1600)} />);
+
+    else if(this.state.selectedClass == "challenges")
+      return (<Challenges next ="contact" clicked = {() => setTimeout(() => { this.changeClass("challenges") }, 1600)} />);      
 
     return (
       <div>

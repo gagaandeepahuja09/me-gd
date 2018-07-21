@@ -15,8 +15,8 @@ class Header extends Component {
 					<div>
 						<input type = "checkbox" className="lArrow__checkbox" id = "lArrow"/>
 	            		<label for = "lArrow" className="lArrow__button">
-	            			<i className = "lArrow__button--look icon-arrows-circle-left"
-	            			 onClick = {this.props.clicked}></i>About Me
+	            			<div className = "lArrow__button--look"
+	            			 onClick = {this.props.clicked}></div><div className = "lArrow__button--text">About Me</div>
 	            		</label>
 						<div className = "header">
 							<h1 className = "heading__primary">

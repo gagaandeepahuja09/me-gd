@@ -1,3 +1,58 @@
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 500;
+	background-image: linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4));
+	width: 100%;
+	height: 100vh;
+}
+
+.preview--text {
+	color: #99ff99;
+	text-transform: uppercase;
+	font-weight: 900;
+	display: inline-block;
+	margin: 1.5rem;
+	padding: 1rem 2rem;
+	background-color: #4d4d4d;
+	color: white;
+	box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+
+.preview {
+	color: #99ff99;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 50%;
+	margin-top: 2.5rem;
+	margin: .5rem;
+	z-index: 1000;
+	border-radius: 1.5%;
+	background-color: #99ff99;
+	position: relative;
+}
+
+.cross {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 8%;
+	left: 95%;
+	cursor: pointer;
+	color: red;
+	font-weight: 900;
+	right: 100%;
+}
+
+.cross::after {
+	content: "";
+	width: 1.7rem;
+	height: 1.7rem;
+	color: green;
+}
+
 .row__2 {
 	width: 100%;
 	display: inline-block;

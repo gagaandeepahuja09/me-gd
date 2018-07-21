@@ -9,9 +9,9 @@ const aboutMe = (props) => {
 				<div className = "gradient" />
 				<input type = "checkbox" className="lArrow__checkbox" id = "lArrow"/>
 	    		<label for = "lArrow" className="lArrow__button">
-	    			<i className = "lArrow__button--look icon-arrows-circle-left"
-	    			 onClick = {props.clicked}></i>About Me
-	    		</label>
+        			<div className = "lArrow__button--look"
+        			 onClick = {props.clicked}></div><div className = "lArrow__button--text">Projects</div>
+        		</label>
 	    		<div className = "about">
 					<h1 className = "heading__primary--4">about</h1><div/>
 					<div className = "row">

@@ -108,11 +108,11 @@
 }
 
 .my__img {
-	width: 33%;
+	width: 29%;
 	height: 92vh;
 	display: inline-block;
 	background-image: url(../../img/me.jpg);
-	border: .8rem solid white;
+	border: .7rem solid white;
 	position: relative;
 	transition: all 10s;
 }
@@ -172,7 +172,7 @@
 }
 
 .photo-width {
-	width: 32%;
+	width: 27%;
 	margin: 0 auto;
 	display: inline-block;
 	float: left;
@@ -213,57 +213,4 @@
 
 .me__text:not(:last-child) {
 	padding-bottom: 1.8rem;
-}
-
-// LOOK
-
-.lArrow2__checkbox {
-	display: none;
-}
-
-.lArrow2__button {
-	position: absolute;
-	top: 40%;
-	left: 95.5%;
-	color: #eee;
-	font-weight: 700;
-	display: block;
-	text-transform: uppercase;
-	font-size: .65rem;
-	animation: lArrow2Anim 4s cubic-bezier(0,1.92,0,.74) infinite;
-	z-index: 1000;
-}
-
-.lArrow2__button--look {
-	color: #eee;
-	font-size: 2.5rem;
-	display: block;
-	cursor: pointer;
-}
-
-.lArrow2__button--look:hover {
-	cursor: pointer;
-	font-weight: 900;
-}
-
-.lArrow2__checkbox:checked ~ .about { 
-	transform: rotateY(-80deg);
-	opacity: 0;                   
-}
-
-@keyframes lArrow2Anim {
-	0% {
-		transform: translateX(-5rem);
-		opacity: 0;
-	}
-
-	15% {
-		transform: translate(0);
-		opacity: .7;
-	}
-
-	100% {
-		transform: translate(0);
-		opacity: .7;
-	}
 }
