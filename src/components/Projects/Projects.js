@@ -73,7 +73,7 @@ class Projects extends Component {
 		}
 
 		return (
-			<div className = "images">
+			<div className = "images showEff">
 				<input type = "checkbox" className="lArrow__checkbox" id = "lArrow"/>
 	            		<label for = "lArrow" className="lArrow__button">
 	            			<div className = "lArrow__button--look"
@@ -83,7 +83,7 @@ class Projects extends Component {
 				{preview}
 				<div className = "row__2">
 					<div className = "col-1-of-2">
-						<div className = "img-1" onClick = {() => this.loadPreview('weather-forecast')}>
+						<div className = "img1 weather-forecast" onClick = {() => this.loadPreview('weather-forecast')}>
 							<div className = "img__text--preview" onClick = {() => this.loadPreview('weather-forecast')}>Preview</div>
 							<a href = "https://gagaandeepahuja09.github.io/weather-forecast" target = "_blank" className = "img__text--demo">Demo</a>
 							<a href = "https://github.com/gagaandeepahuja09/weather-forecast" target = "_blank" className = "img__text--github">Github</a>
@@ -91,7 +91,7 @@ class Projects extends Component {
 						</div>
 					</div>
 					<div className = "col-1-of-2">
-						<div className = "img-1" onClick = {() => this.loadPreview('youtube-on-steroids')}>
+						<div className = "img1 youtube-on-steroids" onClick = {() => this.loadPreview('youtube-on-steroids')}>
 							<div className = "img__text--preview" onClick = {() => this.loadPreview('youtube-on-steroids')}>Preview</div>
 							<a href = "https://gagaandeepahuja09.github.io/youtube-on-steroids" target = "_blank" className = "img__text--demo">Demo</a>
 							<a href = "https://github.com/gagaandeepahuja09/youtube-on-steroids" target = "_blank" className = "img__text--github">Github</a>
@@ -101,7 +101,7 @@ class Projects extends Component {
 				</div>
 				<div className = "row__2">
 					<div className = "col-1-of-2">
-						<div className = "img-1" onClick = {() => this.loadPreview('burger-builder')}>
+						<div className = "img1 burger-builder" onClick = {() => this.loadPreview('burger-builder')}>
 								<div className = "img__text--preview" onClick = {() => this.loadPreview('burger-builder')}>Preview</div>
 								<a href = "https://gagaandeepahuja09.github.io/burger-builder" target = "_blank" className = "img__text--demo">Demo</a>
 								<a href = "https://github.com/gagaandeepahuja09/burger-builder" target = "_blank" className = "img__text--github">Github</a>
@@ -109,7 +109,7 @@ class Projects extends Component {
 						</div>
 					</div>
 					<div className = "col-1-of-2">
-						<div className = "img-1" onClick = {() => this.loadPreview('natours-project')}>
+						<div className = "img1 natours-project" onClick = {() => this.loadPreview('natours-project')}>
 								<div className = "img__text--preview" onClick = {() => this.loadPreview('natours-project')}>Preview</div>
 								<a href = "https://gagaandeepahuja09.github.io/natours-project" target = "_blank" className = "img__text--demo">Demo</a>
 								<a href = "https://github.com/gagaandeepahuja09/natours-project" target = "_blank" className = "img__text--github">Github</a>
@@ -119,7 +119,7 @@ class Projects extends Component {
 				</div>
 				<div className = "row__2">
 					<div className = "col-1-of-2">
-						<div className = "img-1" onClick = {() => this.loadPreview('tic-tac-toe')}>
+						<div className = "img1 tic-tac-toe" onClick = {() => this.loadPreview('tic-tac-toe')}>
 							<div className = "img__text--preview" onClick = {() => this.loadPreview('tic-tac-toe')}>Preview</div>
 							<a href = "https://gagaandeepahuja09.github.io/tic-tac-toe" target = "_blank" className = "img__text--demo">Demo</a>
 							<a href = "https://github.com/gagaandeepahuja09/tic-tac-toe" target = "_blank" className = "img__text--github">Github</a>
@@ -127,7 +127,7 @@ class Projects extends Component {
 						</div>
 					</div>
 					<div className = "col-1-of-2">
-						<div className = "img-2" onClick = {() => this.loadPreview('react-calculator')}>
+						<div className = "img1 react-calculator" onClick = {() => this.loadPreview('react-calculator')}>
 							<div className = "img__text--preview" onClick = {() => this.loadPreview('react-calculator')}>Preview</div>
 							<a href = "https://gagaandeepahuja09.github.io/react-calculator" target = "_blank" className = "img__text--demo">Demo</a>
 							<a href = "https://github.com/gagaandeepahuja09/react-calculator" target = "_blank" className = "img__text--github">Github</a>

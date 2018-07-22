@@ -12,7 +12,7 @@ class Header extends Component {
 			if(this.state.animate)
 			{
 				return (
-					<div>
+					<div className = "showEff">
 						<input type = "checkbox" className="lArrow__checkbox" id = "lArrow"/>
 	            		<label for = "lArrow" className="lArrow__button">
 	            			<div className = "lArrow__button--look"

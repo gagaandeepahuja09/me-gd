@@ -106,16 +106,17 @@
 	left: 60%;
 }
 
-[class^= "img-"] {
+.img1 {
 	border-radius: .5rem .5rem 0 0;
 	margin: 5rem auto;
 	width: 60%;
 	height: 37vh;
 	position: relative;
 	box-shadow: 0 6rem 12rem rgba(0,0,0,.6);
+	background-size: 150%;
 }
 
-[class^= "img-"]:hover [class^= "img__text"] {
+.img1:hover [class^= "img__text"] {
 	opacity: 1;
 }
 
@@ -140,18 +141,27 @@
 	text-align: center;
 }
 
-.img-1 {
-	background-image: url(../../img/gd-1.jpg);
+
+.burger-builder {
+	background-image: url(../../img/burger-builder.jpg);
 }
 
-.img-2 {
-	background-image: url(../../img/gd-2.jpg);
+.weather-forecast {
+	background-image: url(../../img/weather-forecast.jpg);
 }
 
-.img-3 {
-	background-image: url(../../img/gd-1.jpg);
+.react-calculator {
+	background-image: url(../../img/react-calculator.jpg);
 }
 
-.img-4 {
-	background-image: linear-gradient(to right bottom, white, orange);
+.youtube-on-steroids {
+	background-image: url(../../img/youtube-on-steroids.jpg);
+}
+
+.tic-tac-toe {
+	background-image: url(../../img/tic-tac-toe.jpg);
+}
+
+.natours-project {
+	background-image: url(../../img/natours-project.jpg);
 }
