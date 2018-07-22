@@ -18,19 +18,19 @@ class NavCircle extends Component {
 	render() {
 		let home = (<li onMouseOver = {() => this.OverHandler(1)}><i className = "icon-basic-home"></i></li>);
 			if(this.state.Over === 1)
-				home = (<li>Home</li>);
+				home = (<li onClick = {() => this.props.clicked('header')}>Home</li>);
 			let about = (<li onMouseOver = {() => this.OverHandler(2)}><i className = "icon-basic-info"></i></li>);
 			if(this.state.Over === 2)
-				about = (<li>About</li>);
+				about = (<li onClick = {() => this.props.clicked('aboutMe')}>About</li>);
 			let projects = (<li onMouseOver = {() => this.OverHandler(3)}><i className = "icon-basic-gear"></i></li>);
 			if(this.state.Over === 3)
-				projects = (<li>Projects</li>);
+				projects = (<li  onClick = {() => this.props.clicked('projects')}>Projects</li>);
 			let challenges = (<li onMouseOver = {() => this.OverHandler(4)}><i className = "icon-basic-calculator"></i></li>);
 			if(this.state.Over === 4)
-				challenges = (<li>Challenges</li>);
+				challenges = (<li  onClick = {() => this.props.clicked('challenges')}>Challenges</li>);
 			let contact = (<li onMouseOver = {() => this.OverHandler(5)}><i className = "icon-basic-message"></i></li>);
 			if(this.state.Over === 5)
-				contact = (<li>Contact</li>);
+				contact = (<li  onClick = {() => this.props.clicked('contact')}>Contact</li>);
 
 	return (
 			<div>
