@@ -174,12 +174,17 @@
 	height: 100%;
 }
 
+.links li:hover {
+	box-shadow: 0 2rem 4rem rgba(0,0,0,.6);
+}
+
 .hr {
 	background-image: url(../../img/hackerrank.jpg);
 }
 
 .ib {
 	background-image: url(../../img/interviewbit.jpg);	
+	background-size: 85% !important;
 }
 
 .lc {
@@ -188,4 +193,22 @@
 
 .he {
 	background-image: url(../../img/hackerearth.jpg);	
+}
+
+.fb {
+	background-image: url(../../img/facebook.jpg);
+	background-size: 80% !important;
+}
+
+.linkedin {
+	background-image: url(../../img/linkedin.jpg);
+	background-size: 85% !important;	
+}
+
+.medium {
+	background-image: url(../../img/medium.jpg);	
+}
+
+.github {
+	background-image: url(../../img/github.jpg);
 }

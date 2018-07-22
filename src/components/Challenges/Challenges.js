@@ -3,7 +3,13 @@ import './Challenges.css';
 
 const challenges = (props) => {
 	return(
-		<div>
+		<div className = "showEff">
+				<div className = "gradient" />
+				<input type = "checkbox" className="lArrow__checkbox" id = "lArrow"/>
+	    		<label for = "lArrow" className="lArrow__button">
+        			<div className = "lArrow__button--look"
+        			 onClick = {props.clicked}></div><div className = "lArrow__button--text">Contact</div>
+        		</label>
 			<h1 className = "heading__primary--4 heading__primary--c">Competitive Coding Challenges</h1>
 			<div className = "row row--2">
 				<div className = "col-1-of-2--1">
