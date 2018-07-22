@@ -1,10 +1,10 @@
 {
-  "main.css": "static/css/main.b94fd88e.css",
-  "main.css.map": "static/css/main.b94fd88e.css.map",
-  "main.js": "static/js/main.9f78b972.js",
-  "main.js.map": "static/js/main.9f78b972.js.map",
-  "static\\media\\gd-1.jpg": "static/media/gd-1.8652dce6.jpg",
-  "static\\media\\gd-2.jpg": "static/media/gd-2.b11a2067.jpg",
+  "main.css": "static/css/main.e74a5ac1.css",
+  "main.css.map": "static/css/main.e74a5ac1.css.map",
+  "main.js": "static/js/main.f85228a1.js",
+  "main.js.map": "static/js/main.f85228a1.js.map",
+  "static\\media\\burger-builder.jpg": "static/media/burger-builder.ed0f4df9.jpg",
+  "static\\media\\gd-3.jpg": "static/media/gd-3.de35f284.jpg",
   "static\\media\\gd-4.jpg": "static/media/gd-4.c4014088.jpg",
   "static\\media\\linea-arrows-10.eot": "static/media/linea-arrows-10.9b287297.eot",
   "static\\media\\linea-arrows-10.svg": "static/media/linea-arrows-10.839102e0.svg",
@@ -14,5 +14,10 @@
   "static\\media\\linea-basic-10.svg": "static/media/linea-basic-10.177764ea.svg",
   "static\\media\\linea-basic-10.ttf": "static/media/linea-basic-10.e6763f00.ttf",
   "static\\media\\linea-basic-10.woff": "static/media/linea-basic-10.61f3a8a3.woff",
-  "static\\media\\me.jpg": "static/media/me.41a58de1.jpg"
+  "static\\media\\me.jpg": "static/media/me.41a58de1.jpg",
+  "static\\media\\natours-project.jpg": "static/media/natours-project.1e01739c.jpg",
+  "static\\media\\react-calculator.jpg": "static/media/react-calculator.ecb3d9b1.jpg",
+  "static\\media\\tic-tac-toe.jpg": "static/media/tic-tac-toe.06375ae9.jpg",
+  "static\\media\\weather-forecast.jpg": "static/media/weather-forecast.db1d518f.jpg",
+  "static\\media\\youtube-on-steroids.jpg": "static/media/youtube-on-steroids.ee61b0bc.jpg"
 }
