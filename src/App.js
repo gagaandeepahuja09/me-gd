@@ -32,7 +32,7 @@ class App extends Component {
       selClass = (<Challenges next ="contact" clicked = {() => setTimeout(() => { this.changeClass("contact") }, 1600)} />);
 
     else if(this.state.selectedClass == "contact")
-      selClass = (<Contact next ="contact" clicked = {() => setTimeout(() => { this.changeClass("challenges") }, 1600)} />);        
+      selClass = (<Contact next ="contact" clicked = {(id) => {this.changeClass(id)} } />);        
 
     return (
       <div>

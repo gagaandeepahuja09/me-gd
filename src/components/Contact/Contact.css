@@ -96,3 +96,45 @@ textarea {
 	transform: translateY(-.5rem);
 	color: white;
 }
+
+.footer {
+	background-color: black;
+}
+
+.footer__logo-box {
+	display: block;
+	margin: 0 auto;
+	padding: 2rem;
+	font-size: 2rem;
+	width: 3rem;
+	height: 2rem;
+	color: purple;
+	font-weight: 900;
+	border: 4px solid purple;
+	margin-bottom: -7rem;
+}
+
+.col-1-of-22 {
+	background-color: black;
+	font-size: 1.5rem;
+	padding: 2.3rem;
+	width: 44%;
+	text-align: center;
+	float: left;
+	height: 54vh;
+}
+
+.col-1-of-22 ul {
+	list-style-type: none;
+}
+
+.footer__item {
+	cursor: pointer;
+	color: purple;
+	padding: 1rem .4rem;
+	border: 2px dashed purple;
+}
+
+.footer__item:hover {
+	background-color: grey;
+}

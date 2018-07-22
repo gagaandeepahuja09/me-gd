@@ -21,11 +21,6 @@ class Contact extends Component {
 			<div className = "showEff">
 				<div className = "gradient" />
 				{ attachedClass }
-				<input type = "checkbox" className="lArrow__checkbox" id = "lArrow"/>
-	    		<label for = "lArrow" className="lArrow__button">
-	    			<div className = "lArrow__button--look"
-	    			 onClick = {this.props.clicked}></div><div className = "lArrow__button--text">Projects</div>
-	    		</label>
 	    		<h1 className = "heading__primary--4">Contact</h1>
 	    		
 	    		<div className = "btn-send green-orange" onClick = {this.connected}>Connect &rarr;</div>
@@ -49,7 +44,35 @@ class Contact extends Component {
 						</div>
 					</form>
 					<div className = "btn-send green">Send &rarr;</div>
-				</div>	
+				</div>
+				
+			<footer className = "footer">
+   			<div className = "footer__logo-box">
+            	GD
+        	</div>
+            <div className = "row--2">
+                <div className = "col-1-of-22">
+                    <div className = "footer__navigation">
+                        <ul className = "footer__list">
+                            <li className = "footer__item" onClick = {() => this.props.clicked('header')}>Home</li>
+                            <li className = "footer__item" onClick = {() => this.props.clicked('aboutMe')}>About</li>
+                            <li className = "footer__item" onClick = {() => this.props.clicked('projects')}>Projects</li>
+                            <li className = "footer__item" onClick = {() => this.props.clicked('challenges')}>Challenges</li>
+                            <li className = "footer__item" onClick = {() => this.props.clicked('contact')}>Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div className = "col-1-of-22">
+                    <p className = "footer__copyright">
+                        Built by <a href="#" class="footer__link">Gagandeep Singh Ahuja</a> as his portfolio to showcase his skills and projects
+                        Copyright &copy; by Gagandeep Singh Ahuja. You are allowed to use the project ideas for both personal
+                        and commercial use, but not to claim it as your own idea.
+                        Some of the projects are his independent projects while others are part of udemy courses. A credit to the original author, Gagandeep, is highly appreciated!
+                    </p>
+                </div>
+            </div>
+        </footer>
+
 	    	</div>
 		);
 	}
